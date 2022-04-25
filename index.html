@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aurebesh Translator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="container_star">
+		<div id="stars"></div>
+		<div id="stars2"></div>
+		<div id="stars3"></div>
+
+		<div class="container_float">
+			<div class="title_main">
+				<h1>Aurebesh Translator</h1>
+			</div>
+
+
+
+			<div class="box_title"><h3>Text to transalte into Aurebesh:</h3></div>
+			<div class="box_title" id="box_title_au"><h3>Translation:</h3></div>
+			<div class="clr"></div>
+
+
+
+
+			<div class="box_text">
+				<textarea id="trans_eng" placeholder="text"></textarea>
+			</div>
+
+			<div class="box_btn">
+				<button id="btn" onclick="trans()">Translate!</button>
+			</div>
+
+			<div class="box_text" id="box_text_au">
+				<textarea id="trans_au" placeholder="text"></textarea>
+			</div>
+
+
+		</div>
+	</div>
+
+	<script>		
+		function trans(){
+			document.getElementById('trans_au').value = document.getElementById('trans_eng').value
+		}
+	</script>
+</body>
+</html>
