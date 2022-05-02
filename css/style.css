@@ -3,10 +3,24 @@
     src: url(../fonts/Aurebesh.otf) format("truetype");
 }
 
+@media(max-width: 600px){
+    #box_text_au{
+        width: 100%;
+        float: none;
+    }
+    #box_text_eng{
+        width: 100%;
+        float: none;
+    }
+    #box_btn_btn{
+        width: 100%;
+        float: none;
+    } 
+}
 
 html{
     height: 100%;
-    overflow: hidden;
+    overflow: hidden;    
     background-color: black;
 }
 
